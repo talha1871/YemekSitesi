@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+@model UpdateTestimonialDto
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Ana Sayfa Hakkımızda İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Hakkımızda Yazı Güncelleme Sayfası</div>
+                        </div>
+                        <input type="hidden" asp-for="TestimonialID" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialName">Testimonial Adı</label>
+                                <input type="text" class="form-control" asp-for="TestimonialName" id="TestimonialName">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialTitle">Testimonial Başlığı</label>
+                                <input type="text" class="form-control" asp-for="TestimonialTitle" id="TestimonialTitle">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialDescription">Testimonial Açıklaması</label>
+                                <input type="text" class="form-control" asp-for="TestimonialDescription" id="TestimonialDescription">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialImage">Görseli Giriniz</label>
+                                <input type="text" class="form-control" asp-for="TestimonialImage" id="TestimonialImage">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Hakkımda Yazısını Güncelle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

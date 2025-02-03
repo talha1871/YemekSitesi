@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YemekSitesiApi", "YemekSitesiApi\YemekSitesiApi.csproj", "{3883A5AA-DC2E-418A-8675-4ACA8B98CCC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YemekSitesiUI", "YemekSitesiUI\YemekSitesiUI.csproj", "{807C0786-9044-446E-BBB1-9CAF2C6F1B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_YemekSitesi", "DAL_YemekSitesi\DAL_YemekSitesi.csproj", "{DC54A64A-0C79-489B-8C09-599F07B0A01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL_YemekSitesi", "BL_YemekSitesi\BL_YemekSitesi.csproj", "{56AC0CA4-943F-4406-8914-814A5C1C5D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base_Model", "Base_Model\Base_Model.csproj", "{82E0577B-19B6-4C69-B0A9-02E0C7C86298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtoLayer", "DtoLayer\DtoLayer.csproj", "{F4A24477-F884-4ABC-9E59-49C5C30C8170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3883A5AA-DC2E-418A-8675-4ACA8B98CCC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3883A5AA-DC2E-418A-8675-4ACA8B98CCC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3883A5AA-DC2E-418A-8675-4ACA8B98CCC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3883A5AA-DC2E-418A-8675-4ACA8B98CCC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{807C0786-9044-446E-BBB1-9CAF2C6F1B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{807C0786-9044-446E-BBB1-9CAF2C6F1B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{807C0786-9044-446E-BBB1-9CAF2C6F1B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{807C0786-9044-446E-BBB1-9CAF2C6F1B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC54A64A-0C79-489B-8C09-599F07B0A01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC54A64A-0C79-489B-8C09-599F07B0A01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC54A64A-0C79-489B-8C09-599F07B0A01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC54A64A-0C79-489B-8C09-599F07B0A01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AC0CA4-943F-4406-8914-814A5C1C5D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AC0CA4-943F-4406-8914-814A5C1C5D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AC0CA4-943F-4406-8914-814A5C1C5D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AC0CA4-943F-4406-8914-814A5C1C5D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E0577B-19B6-4C69-B0A9-02E0C7C86298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E0577B-19B6-4C69-B0A9-02E0C7C86298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E0577B-19B6-4C69-B0A9-02E0C7C86298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E0577B-19B6-4C69-B0A9-02E0C7C86298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A24477-F884-4ABC-9E59-49C5C30C8170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A24477-F884-4ABC-9E59-49C5C30C8170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A24477-F884-4ABC-9E59-49C5C30C8170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A24477-F884-4ABC-9E59-49C5C30C8170}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

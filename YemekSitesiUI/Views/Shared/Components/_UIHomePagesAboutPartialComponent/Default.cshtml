@@ -1,0 +1,37 @@
+﻿
+@*
+ABOUT SECTION
+*@
+@model List<ResultAboutDto>
+<section class="about_section layout_padding">
+    <div class="container  ">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+            
+            <div class="col-md-6 ">
+                <div class="img-box">
+                    <img src="~/feane-1.0.0/images/about-img.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            @item.AboutName
+                        </h2>
+                    </div>
+                    <p>
+                        @item.AboutDescription
+                    </p>
+                    <a href="">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            }
+        </div>
+    </div>
+</section>

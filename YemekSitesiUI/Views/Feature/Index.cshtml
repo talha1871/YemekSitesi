@@ -1,0 +1,63 @@
+﻿
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+	int count = 0;
+
+}
+@model List<ResultFeatureDto>
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Kategori İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Özellik Listesi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Özellik İle İlgili İşlemler
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">Özellik ID</th>
+									<th scope="col">Birinci Ad</th>
+									<th scope="col">İkinci Ad</th>
+									<th scope="col">Üçüncü Ad</th>
+									<th scope="col">Birinci Açıklama</th>
+									<th scope="col">İkinci Açıklama</th>
+									<th scope="col">Üçüncü Açıklama</th>
+									<th scope="col">Sil</th>
+									<th scope="col">Güncelle</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td>@item.FeatureName1</td>
+										<td>@item.FeatureName2</td>
+										<td>@item.FeatureName3</td>
+										<td>@item.Description1</td>
+										<td>@item.Description2</td>
+										<td>@item.Description3</td>
+										<td><a href="/Feature/DeleteFeature/@item.FeatureID" class="btn btn-outline-danger">Sil</a></td>
+										<td><a href="/Feature/UpdateFeature/@item.FeatureID" class="btn btn-outline-success">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+
+						</table>
+						<a href="/Feature/CreateFeature/" class="btn btn-outline-primary">Özellik Ekle</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

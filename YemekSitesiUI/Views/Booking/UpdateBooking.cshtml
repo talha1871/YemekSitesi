@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+@model UpdateBookingDto
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Ana Sayfa Hakkımızda İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Rez Güncelleme Sayfası</div>
+                        </div>
+                        <input type="hidden" asp-for="BookingID" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="BookingName">Rezervasyon Giriniz</label>
+                                <input type="text" class="form-control" asp-for="BookingName" id="BookingName">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="BookingEmail">Email Giriniz</label>
+                                <input type="email" class="form-control" asp-for="BookingEmail" id="BookingEmail">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="BookingDate">Tarih Giriniz</label>
+                                <input type="date" class="form-control" asp-for="BookingDate" id="BookingDate">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="BookingDescription">Açıklamayı Giriniz</label>
+                                <input type="text" class="form-control" asp-for="BookingDescription" id="BookingDescription">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="BookingPhone">Telefon</label>
+                                <input type="text" class="form-control" asp-for="BookingPhone" id="BookingPhone">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="PersonCount">Kişi Sayısı</label>
+                                <input type="number" class="form-control" asp-for="PersonCount" id="PersonCount">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Hakkımda Yazısını Güncelle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
